@@ -158,7 +158,7 @@ With this project, I am bringing together concepts practiced in my previous game
 
 ## Connect with Me
 
-[Linkedin](https:www.linkedin.com/in/guilherme-medeiros-b4a26520a)
+[Linkedin](https://www.linkedin.com/in/guilherme-medeiros-b4a26520a)
 
 [Github](https://github.com/viha-coder)
 
