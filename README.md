@@ -1,4 +1,4 @@
-# 🎯 Sharp Shooter
+# Sharp Shooter
 
 [![Unity Version](https://img.shields.io/badge/Unity-2022.3+-blue.svg)](https://play.unity.com/en/games/330ef413-5a66-42d0-93d4-e87eea9326bc/sharp-shooter)
 [![C#](https://img.shields.io/badge/C%23-9.0-purple.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
@@ -10,9 +10,10 @@ The goal of Sharp Shooter was to combine concepts learned throughout my previous
 
 ---
 
-## 🎮 Gameplay
+## Gameplay
 
-![Sharp Shooter Gameplay](<img width="800" height="450" alt="2026-09-2809-27-02-ezgif com-optimize" src="https://github.com/user-attachments/assets/aeac03ae-c952-459b-b2a3-805c9562a189" />)
+![Sharp Shooter Gameplay](<img width="800" height="450" alt="2026-09-2809-27-02-ezgif com-optimize" src="https://github.com/user-attachments/assets/60f44752-cb0b-49ed-98e0-9436b1451c23" />
+)
 
 Sharp Shooter is a first-person shooter where the player fights enemies across a level using different weapons.
 
@@ -35,7 +36,7 @@ The final version includes:
 
 ---
 
-## 🛠️ Technologies & Concepts
+## Technologies & Concepts
 
 | Concept | Implementation |
 |---|---|
@@ -51,45 +52,45 @@ The final version includes:
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
-### 🔫 Weapon System
+### Weapon System
 
 Created a `WeaponSO` to store weapon-specific information such as damage, fire rate and hit effects.
 
 Separating weapon data from the shooting logic made it easier to create and configure different weapons without changing the core shooting system.
 
-### 🎯 Raycast Shooting
+### Raycast Shooting
 
 Implemented shooting using `Physics.Raycast()` to detect what the player is aiming at.
 
 The system can detect enemy hits, apply damage and create visual effects at the point of impact.
 
-### 🔭 Sniper Scope
+### Sniper Scope
 
 Implemented a scope system for the Sniper, creating a different aiming experience from the other weapons.
 
-### 🤖 Enemy System
+### Enemy System
 
 Created an enemy health system for receiving and processing damage, together with navigation and behavior for enemies that can move toward the player.
 
 The robot can also self-destruct when it reaches the player.
 
-### 🎒 Weapon Pickups
+### Weapon Pickups
 
 Implemented weapon pickups throughout the level, allowing the player to find and switch weapons during gameplay.
 
-### 🏗️ Level Design
+### Level Design
 
 Used ProBuilder to create and prototype the level, allowing me to focus on gameplay layout and player movement while building the environment.
 
-### ✨ Visual Feedback
+### Visual Feedback
 
 Added muzzle flashes, hit effects and weapon animations to make the player's actions more visually responsive.
 
 ---
 
-## 📊 Enemy Counter
+## Enemy Counter
 
 The game includes an enemy counter that tracks the remaining enemies in the level.
 
@@ -99,7 +100,7 @@ When all enemies are eliminated, the game triggers the completion state.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Sharp-Shooter/
@@ -122,7 +123,7 @@ Sharp-Shooter/
 
 ---
 
-## 🚀 How to Play
+## How to Play
 
 1. Clone the repository:
 
@@ -142,7 +143,7 @@ Assets/Scenes/
 
 ---
 
-## 🔧 Customization
+## Customization
 
 ### Creating a New Weapon
 
@@ -171,7 +172,7 @@ Select an enemy GameObject and modify its **Max Health** value in the `EnemyHeal
 
 ---
 
-## 💼 About the Project
+## About the Project
 
 Sharp Shooter is my **fifth Unity and C# project**.
 
@@ -181,7 +182,7 @@ It was also an opportunity to work on a more complete FPS, combining gameplay me
 
 ---
 
-## 🔗 Connect with Me
+## Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-medeiros-b4a26520a)
 
