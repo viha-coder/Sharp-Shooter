@@ -1,6 +1,7 @@
 # Sharp Shooter
 
 [![Unity Version](https://img.shields.io/badge/Unity-2022.3+-blue.svg)](https://play.unity.com/en/games/330ef413-5a66-42d0-93d4-e87eea9326bc/sharp-shooter)
+[![Desktop Version](https://img.shields.io/badge/Download-V1.0-red.svg)](https://github.com/viha-coder/Sharp-Shooter/releases/tag/V1.0)
 [![C#](https://img.shields.io/badge/C%23-9.0-purple.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
