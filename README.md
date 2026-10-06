@@ -1,69 +1,105 @@
-#  Sharp Shooter
+# 🎯 Sharp Shooter
+
+[![Unity Version](https://img.shields.io/badge/Unity-2022.3+-blue.svg)](https://play.unity.com/en/games/330ef413-5a66-42d0-93d4-e87eea9326bc/sharp-shooter)
+[![C#](https://img.shields.io/badge/C%23-9.0-purple.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A first-person shooter (FPS) built with Unity and C#, created as my fifth game development project.
 
-The goal of Sharp Shooter is to combine concepts learned throughout my previous projects while introducing new systems for weapons, shooting, enemies and level design.
+The goal of Sharp Shooter was to combine concepts learned throughout my previous projects while exploring new systems for weapons, shooting, enemies and level design.
 
 ---
 
-## Gameplay
+## 🎮 Gameplay
 
-Sharp Shooter is a first-person shooter where the player uses a weapon to fight enemies across the level.
+![Sharp Shooter Gameplay](<img width="800" height="450" alt="2026-09-2809-27-02-ezgif com-optimize" src="https://github.com/user-attachments/assets/aeac03ae-c952-459b-b2a3-805c9562a189" />)
 
-The project currently includes:
+Sharp Shooter is a first-person shooter where the player fights enemies across a level using different weapons.
 
-* First-person shooting
-* Weapon system with configurable weapon data
-* Raycast-based shooting and hit detection
-* Enemy health and damage system
-* Muzzle flash and hit effects
-* Fire-rate cooldown
-* Level prototyping with ProBuilder
+The final version includes:
 
----
-
-## Technologies & Concepts
-
-| Concept             | Implementation                                    |
-| ------------------- | ------------------------------------------------- |
-| **Weapon Data**     | ScriptableObjects (`WeaponSO`)                    |
-| **Shooting**        | `Physics.Raycast()` for hit detection             |
-| **Effects**         | Particle Systems for muzzle flash and hit effects |
-| **Enemy System**    | `EnemyHealth` with damage handling                |
-| **Level Design**    | ProBuilder for rapid prototyping                  |
-| **Version Control** | Git & GitHub                                      |
+- First-person shooting
+- Multiple weapon types, including Machine Gun and Sniper
+- Sniper scope system
+- Weapon pickups throughout the level
+- Configurable weapon data
+- Raycast-based shooting and hit detection
+- Enemy health and damage system
+- Enemy navigation and behavior
+- Muzzle flash and hit effects
+- Weapon animations
+- Fire-rate cooldown
+- Enemy counter
+- Game completion flow
+- Level designed with ProBuilder
 
 ---
 
-## What I Learned
+## 🛠️ Technologies & Concepts
 
-### Weapon System
+| Concept | Implementation |
+|---|---|
+| **Weapon Data** | ScriptableObjects (`WeaponSO`) |
+| **Shooting** | `Physics.Raycast()` for hit detection |
+| **Weapons** | Machine Gun, Sniper and weapon pickups |
+| **Sniper Scope** | Custom aiming/scope system |
+| **Effects** | Particle Systems for muzzle flash and hit effects |
+| **Enemy System** | `EnemyHealth` with damage handling |
+| **Enemy Navigation** | NavMesh |
+| **Level Design** | ProBuilder |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 📚 What I Learned
+
+### 🔫 Weapon System
 
 Created a `WeaponSO` to store weapon-specific information such as damage, fire rate and hit effects.
 
-This keeps weapon data separate from the shooting logic, making it easier to create and adjust different weapons without changing the core shooting system.
+Separating weapon data from the shooting logic made it easier to create and configure different weapons without changing the core shooting system.
 
-### Raycast Shooting
+### 🎯 Raycast Shooting
 
 Implemented shooting using `Physics.Raycast()` to detect what the player is aiming at.
 
 The system can detect enemy hits, apply damage and create visual effects at the point of impact.
 
-### Enemy Health System
+### 🔭 Sniper Scope
 
-Created an `EnemyHealth` system responsible for receiving and processing damage.
+Implemented a scope system for the Sniper, creating a different aiming experience from the other weapons.
 
-This separates the enemy's health logic from the weapon system and makes the interaction between different gameplay systems easier to manage.
+### 🤖 Enemy System
 
-### Level Prototyping
+Created an enemy health system for receiving and processing damage, together with navigation and behavior for enemies that can move toward the player.
 
-Used ProBuilder to quickly create and test the level layout before focusing on visual details.
+The robot can also self-destruct when it reaches the player.
 
-This allowed me to experiment with the gameplay space and adjust the environment while keeping development focused on the core mechanics.
+### 🎒 Weapon Pickups
+
+Implemented weapon pickups throughout the level, allowing the player to find and switch weapons during gameplay.
+
+### 🏗️ Level Design
+
+Used ProBuilder to create and prototype the level, allowing me to focus on gameplay layout and player movement while building the environment.
+
+### ✨ Visual Feedback
+
+Added muzzle flashes, hit effects and weapon animations to make the player's actions more visually responsive.
 
 ---
 
-## Project Structure
+## 📊 Enemy Counter
+
+The game includes an enemy counter that tracks the remaining enemies in the level.
+
+The count is updated when enemies are defeated, including when an enemy self-destructs.
+
+When all enemies are eliminated, the game triggers the completion state.
+
+---
+
+## 📁 Project Structure
 
 ```text
 Sharp-Shooter/
@@ -86,7 +122,7 @@ Sharp-Shooter/
 
 ---
 
-## How to Play
+## 🚀 How to Play
 
 1. Clone the repository:
 
@@ -99,14 +135,14 @@ git clone https://github.com/viha-coder/Sharp-Shooter.git
 3. Open the main scene from:
 
 ```text
-Assets/Scenes/MainScene.unity
+Assets/Scenes/
 ```
 
-4. Press Play and use the left mouse button to shoot.
+4. Press Play and use the controls to move, aim, shoot and interact with weapon pickups.
 
 ---
 
-## Customization
+## 🔧 Customization
 
 ### Creating a New Weapon
 
@@ -118,9 +154,9 @@ Project → Create → ScriptableObjects → weaponSO
 
 Then configure properties such as:
 
-* Damage
-* Fire Rate
-* Hit VFX
+- Damage
+- Fire Rate
+- Hit VFX
 
 For example:
 
@@ -135,31 +171,18 @@ Select an enemy GameObject and modify its **Max Health** value in the `EnemyHeal
 
 ---
 
-## Next Steps
+## 💼 About the Project
 
-The project is still under development. Planned improvements include:
+Sharp Shooter is my **fifth Unity and C# project**.
 
-* Enemy AI with patrol, chase and attack behaviors
-* Multiple weapon types, such as pistol, rifle and shotgun
-* Player health and ammunition systems
-* UI for gameplay information
-* Additional levels
-* Sound effects and music
+The project was created to bring together concepts practiced throughout my previous games while introducing new systems such as raycast shooting, weapon management, enemy navigation, pickups and level design.
+
+It was also an opportunity to work on a more complete FPS, combining gameplay mechanics, visual feedback and multiple interconnected systems in a single project.
 
 ---
 
-## About the Project
+## 🔗 Connect with Me
 
-Sharp Shooter is part of my ongoing journey to build a stronger foundation in C# and Unity through practical projects.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-medeiros-b4a26520a)
 
-With this project, I am bringing together concepts practiced in my previous games while exploring new systems such as raycast-based shooting, weapon management and enemy gameplay mechanics.
-
----
-
-## Connect with Me
-
-[Linkedin](https://www.linkedin.com/in/guilherme-medeiros-b4a26520a)
-
-[Github](https://github.com/viha-coder)
-
-##
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/viha-coder)
