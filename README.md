@@ -13,8 +13,7 @@ The goal of Sharp Shooter was to combine concepts learned throughout my previous
 ## Gameplay
 
 
-![Sharp Shooter Gameplay](<img width="800" height="450" alt="2026-09-2809-27-02-ezgif com-optimize" src="https://github.com/user-attachments/assets/db6ac3b6-bc2e-4c3c-aca4-06ca0b02187b" />
-)
+<img width="800" height="450" alt="Sharp Shooter Gameplay" src="https://github.com/user-attachments/assets/db6ac3b6-bc2e-4c3c-aca4-06ca0b02187b" />
 
 Sharp Shooter is a first-person shooter where the player fights enemies across a level using different weapons.
 
